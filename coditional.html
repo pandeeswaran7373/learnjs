@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body >
+    <div id="header">
+        <div class="container">
+            <a href="index.html" id="title">Learn Javascript</a>
+            <ul id="header-nav">
+
+                <li><a href="coditional.html">Coditional</a></li>
+                <li><a href="operators.html">Operators</a></li>
+                <li><a href="loops.html">Loops</a></li>
+                <li><a href="Obj&OOP.html">OOP</a></li>
+
+            </ul>
+    </div>    
+    </div>
+
+        <h1 style="background-color: black;color: white;">Conditional Statments</h1>
+        <h3>Types of Conditional-Statments</h3>
+        <ul>
+            <li>If-else condition</li>
+            <li>Switch-Case condition</li>
+        </ul>
+        <h2 style="background-color: black;color:white;">If-else condition</h2>
+
+        <strong>Syntex</strong>
+        <pre>
+    <h4>Single line code</h4>
+
+    if(condition)
+        console.log("condition: True");
+    else
+        console.log("condition: False");
+
+    <h4>Multi-Line code</h4> 
+
+    if(condition){
+        console.log("condition: True");
+        console.log("condition: True");
+    
+    }
+
+    else{
+        console.log("condition: False");
+    }
+
+    </pre>
+
+        <h3 class="sample-program">Example Program 1</h3>
+        <textarea rows="20" cols="50" disabled>
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~    
+            //single line program
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~    
+let weather = "hot";
+
+if(weather === "hot"){
+    console.log("The Weather is Hot!");
+}
+else{
+    console.log("The Weather is cold!");
+}
+
+//console.log output is --- weather is hot
+    </textarea>
+
+        <h3 class="sample-program">Example Program 2</h3>
+        <textarea rows="20" cols="45" disabled>
+    ~~~~~~~~~~~~~~~~~~~~~
+   | //multi-line Program |
+    ~~~~~~~~~~~~~~~~~~~~~
+let isRaining = false;
+ 
+
+if (isRaining || isCloudy) {
+    console.log("Don't forget to take Umberella");
+} else {
+    console.log("Sky is normal! Enjoy the weather");
+}
+
+//console.log output is --- Don't forget to take Umberlla!
+</textarea>
+        <p>
+            If hour is between 12AM(0) to 1PM(13) -> Good Morning<br>
+            Else if hour is between 1PM(13) to 5PM(17) -> Good Afternoon<br>
+            Else if hour is between 5PM(17) to 12AM(0) -> Good Evening
+        </p>
+
+
+        <h3 class="sample-program">Example Program 3 (Wish Messages based on Timing</h3>
+        <textarea rows="30" cols="50" disabled>
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    program1
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    let hour = 10;
+
+if (hour >= 0 && hour <= 13) {
+    console.log("Good Morning");
+}
+ else if (hour >= 13 && hour <= 17) {
+    console.log("Good Afternoon");
+}
+else {
+    console.log("Good Evening");
+
+}
+    output is "Good Morning"
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    program 2
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~   
+//wish message based on timing ( automatic)
+
+let hour =new Date().getHours();
+
+if (hour >= 0 && hour <= 13) {
+    console.log("Good Morning");
+}
+ else if (hour >= 13 && hour <= 17) {
+    console.log("Good Afternoon");
+}
+else {
+    console.log("Good Evening");
+}
+
+output is "Good Evening"
+</textarea>
+
+        <h2 class="sample-program">sample-program 4(Mobile buying suggestion)</h2>
+        <article>
+            <p> sample program 3-Mobile buying suggestion</p>
+            <p>If given saving amount is > 10k Buy Android Mobile</p>
+            <p>else if given amount is > 60k Buy iphone Mobile</p>
+            <p>Else If given amount is > 5 && under 10k Buy Basic Mobile</p>
+            <p>Else Print You cant afford mobile phone now!</p>
+        </article>
+        <textarea rows="30" cols="50" disabled>
+
+        console.log("if-else progam");
+
+        let price=60000;
+        
+        if (price >=60000) {
+            console.log("Buy iphone mobile");
+        }
+        else if (price >= 10000) {
+            console.log("Buy Android Mobile");
+        
+        }
+        else if (price >=5000 && price < 10000){ 
+            console.log("Buy Basic Mobile");
+        }
+        else{
+            console.log("You Can't afford mobile phone now!");
+        }
+
+        // console.log output is "Buy iphone"
+</textarea>
+
+        <h2 style="background-color: black;color: white;">Switch-Case Condition</h2>
+        <pre>
+    <strong>Syntax Is</strong> 
+    switch(condition){
+        case 1:
+           console.log("1");
+           break;
+        case 2:
+           console.log("2"); 
+           break;  
+        default:
+           console.log("Default Behaviour")   
+    }
+</pre>
+
+        <h3 class="sample-program">Sample Program</h3>
+        <textarea rows="30" cols="50" disabled>
+    let grade = "A";
+
+switch (grade) {
+    case "S":
+        console.log("S Grade");
+        break;
+    case "A":
+        console.log("A Grade");
+        break;
+    case "B":
+        console.log("B Grade");
+        break;
+    case "C":
+        console.log("C Grade");
+        break;
+    case "E":
+        console.log("E Grade");
+        break;
+    default:
+        console.log("U failed in Exam");
+        break;
+}
+
+//console.log output is "A grade"
+</textarea>
+        <h3 class="sample-program">Sample Program 2(Marks based result system)</h3>
+        <textarea rows="30" cols="50" disabled>
+    //marks based result system
+
+let marks= 95;
+
+switch (true) {
+
+    case marks >90:
+        
+        console.log("Pass-Excellent");
+        break;
+    case (marks <= 90,marks >=70) :
+        console.log("Pass-Good");
+        break;
+    case (70>marks,marks >=50):
+        console.log("Pass-well");
+        break;
+    case ( 50 < marks,marks >=35 ) :
+        console.log("Pass-Need Improvement");
+        break;
+    default:
+        console.log("fail-try to hard");
+        break;
+}
+
+//console.log output is "Pass-Excellent "
+</textarea>
+
+        <h3 class="sample-program">Sample Program 3-Mobile Buying Suggestion</h3>
+        <article>
+            <p> sample program 3-Mobile buying suggestion</p>
+            <p>If given saving amount is > 10k Buy Android Mobile</p>
+            <p>else if given amount is > 60k Buy iphone Mobile</p>
+            <p>Else If given amount is > 5 && under 10k Buy Basic Mobile</p>
+            <p>Else Print You cant afford mobile phone now!</p>
+        </article>
+        <textarea rows="30" cols="50" disabled>
+    let price = 7000;
+
+switch (true) {
+    case (  price >= 60000):    
+        console.log("Buy iphone Mobile");
+        break;
+    case (price >=10000):
+        console.log("Buy Android Mobile");
+        break;
+    case (  10000 > price,price >=5000):
+        console.log("Buy Basic Mobile"); 
+        break; 
+    default:
+        console.log("You can't afford mobile phone now!");
+        
+} 
+
+//console.log output is "Buy iphone Mobile"
+</textarea>
+        <script src="/conditional statement/if_else.js"></script>
+        <script src="/conditional statement/switch_cases.js"></script>
+</body>
+
+</html>

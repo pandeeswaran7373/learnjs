@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operators</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="margin-left:20px;">
+    <div id="header">
+        <div class="container">
+            <a href="index.html" id="title">Learn Javascript</a>
+            <ul id="header-nav">
+
+                <li><a href="coditional.html">Coditional</a></li>
+                <li><a href="operators.html">Operators</a></li>
+                <li><a href="loops.html">Loops</a></li>
+                <li><a href="Obj&OOP.html">OOP</a></li>
+
+            </ul>
+        </div>
+    </div>
+
+    <h3>Javascript Operators</h3>
+    <p>javascript <b>operators</b> used to particular actions <br>
+        They can be used to assign values,compare values,combine values,perform arithametic operations and more.
+        <br>
+        javascript operators are symbols (or set symbols) or keywords.
+    </p>
+    <h4>Types of Operators</h4>
+    <p>Different Types of Operators</p>
+
+    <!--javascript Operators-->
+    <div id="js-op">
+        <ul>
+            <a href="#Arithametic_operators" rel="internal">
+                <li>Arithametic_operators</li>
+            </a>
+            <a href="#Assignment_operators" rel="internal">
+                <li>Assignment_operators</li>
+            </a>
+            <a href="#Comparison_operators" rel="internal">
+                <li>Comparison_operators</li>
+            </a>
+            <a href="#Equlity_operator" rel="internal">
+                <li>Equlity_operator</li>
+            </a>
+            <a href="#Ternary_Operator" rel="internal">
+                <li>Ternary_Operator</li>
+            </a>
+            <a href="#logical_operators" rel="internal">
+                <li>Logical_operators</li>
+            </a>
+            <a href="#bitwise_operators" rel="internal">
+                <li>Bitwise_operators</li>
+            </a>
+
+        </ul>
+    </div>
+    <!--Arithametic OPerators-->
+    <div id="Arithametic_operators">
+        <h2>Javascript Arithametic Operators</h2>
+        <p><b>Arithmetic Operators</b> take a numerical number values as their operands <br>
+            return a single numerical value.
+        </p>
+        <!--table here-->
+        <table>
+            <tr>
+                <th>Operator</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>+</td>
+                <td>addition</td>
+            </tr>
+            <tr>
+                <td>-</td>
+                <td>subtraction</td>
+            </tr>
+            <tr>
+                <td>*</td>
+                <td>multiplication</td>
+            </tr>
+            <tr>
+                <td>/</td>
+                <td>Division</td>
+            </tr>
+            <tr>
+                <td>**</td>
+                <td>Exponentiation</td>
+            </tr>
+            <tr>
+                <td>%</td>
+                <td>Remainder</td>
+            </tr>
+            <tr>
+                <td>++</td>
+                <td>Arithametic Operators</td>
+            </tr>
+            <tr>
+                <td>--</td>
+                <td>Decrement</td>
+            </tr>
+        </table>
+        <h2>Arithametic Operators with example</h2>
+        <!--table here-->
+        <table>
+            <tr>
+                <th>type</th>
+                <th>Description</th>
+                <th>symbol</th>
+                <th>Examaple</th>
+                <th>Output <br> document.write(x)</th>
+            </tr>
+            <tr>
+                <th>Addition</th>
+                <td>this Operator returns the sum of numerical operands <br>
+                    additon operator used concatenate or strings together.
+                </td>
+                <td>+</td>
+                <td>var x = 4 + 2;
+                    <br> <br> var a ="pandi";<br> var b ="s"; <br>var x = a +" "+ b; document.write(x)
+                </td>
+                <td>6 <br><br> pandi s </td>
+            </tr>
+            <tr>
+                <th>Subtraction</th>
+                <td>this Operator returns the difference of its numerical operands </td>
+                <td>-</td>
+                <td>var x = 4 - 2;</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <th>multiplication</th>
+                <td>this operator returns product of its numerical operands.</td>
+                <td>*</td>
+                <td>var x = 2 * 2;</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <th>Division Operator</th>
+                <td>this operator returns the quotient of its numerical operands.</td>
+                <td>/</td>
+                <td>var x = 2 / 2; </td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <th>Exponentiation</th>
+                <td>this operator returns result od rising its <br>first operad of its second oprand.</td>
+                <td>**</td>
+                <td>var x = 3 ** 2 ; <br> its same as 3 * 3 </td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <th>Remainder</th>
+                <td>this operator returns the remainder left <br>when the first operand is divided by the second
+                    operand.</td>
+                <td>%</td>
+                <td>var x = 11 % 2 <br> 11 is divided by 2 remainder 1 </td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <th>Increment</th>
+                <th>this operator adds the 1 to its operand and return value.</th>
+                <td>++</td>
+                <td>var x = 3; <br> x++;</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <th>Decrement</th>
+                <td>this operator deducts 1 from its Operand and return a value.</td>
+                <td>--</td>
+                <td>var x = 3; <br> x--;</td>
+                <td>2</td>
+            </tr>
+        </table>
+        <p class="sub-tit">Operator Sequence</p>
+        <p>Operator Sequence is the order of performed operation in an arith experssion.</p>
+        <p>javascript follows the <b>MDAS</b> pattern in math. <br>
+            javascript performs in maths
+        <ul>
+            <li>Multiplication first </li>
+            <li>Division second</li>
+            <li>Addition third</li>
+            <li>Subtraction fourth</li>
+        </ul>
+        </p>
+
+        <div class="SampleCode">
+            <span>var x = 20+10-5*2.5/1;</span> <br>
+            <span>document.write(x);</span> <br>
+            <span>
+                <p><u>Output is</u></p>
+            </span>
+            <span>17.5</span>
+
+        </div>
+    </div>
+    <!--Assignment Operators-->
+    <div id="Assignment_operators">
+        <h2>Assignment Operators</h2>
+        <p>The <b>Assignment operator</b> is used to assign value to a variable
+            <br> it uses the <b> equal = symbol </b><br>
+            in javascript there are <b>7 basic assignment operators</b>
+        </p>
+        <div>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Operator</th>
+                    <th>Meaning</th>
+                </tr>
+                <tr>
+                    <td>Assignment</td>
+                    <td>x = y</td>
+                    <td>x = y</td>
+                </tr>
+                <tr>
+                    <td>Addition </td>
+                    <td>x += y</td>
+                    <td>x = x+y</td>
+                </tr>
+                <tr>
+                    <td>Subtraction</td>
+                    <td>x -= y</td>
+                    <td>x = x - y </td>
+                </tr>
+                <tr>
+                    <td>Multiplication </td>
+                    <td>x *= y</td>
+                    <td>x = x * y</td>
+                </tr>
+                <tr>
+                    <td>Division</td>
+                    <td>x /= y</td>
+                    <td>x = x / y</td>
+                </tr>
+                <tr>
+                    <td>Remainder</td>
+                    <td>x %= y</td>
+                    <td>x = x & y</td>
+                </tr>
+                <tr>
+                    <td>exponentiation</td>
+                    <td>x **= y</td>
+                    <td>x = x** y</td>
+                </tr>
+            </table>
+        </div>
+        <p class="sp">Sample program</p>
+        <div class="SampleCode">
+            <span>var x = 3; //assign number 3 to x</span><br>
+            <span>var y = 10; //assign number 10 to y</span><br>
+            <span>var sum = x+y; // sum of x and y to sum </span><br>
+            <span>document.write(sum); //print sum</span>
+            <p><u>output is</u></p>
+            <p>13</p>
+        </div>
+        <p>in <b>additon assignment</b> operator adds the value of the right <br>
+            operand to the value of the variable. <br>
+            <br>
+            operator: x += y <br>
+            Equivalent: x = x + y <br>
+        </p>
+        <p class="sp">Sample Program</p>
+        <div class="SampleCode">
+            <span>var x = 3;</span><br>
+            <span>var y = 10; </span> <br>
+            <span>x += y; //adds the value of y to x <br>
+                and then assigns the result to x</span><br> <br>
+            <span>document.write(x);//print x</span>
+            <p><u>Output is</u></p>
+            <p>13</p>
+        </div>
+        <div>
+            <h2>Assignment Operators with Example</h2>
+            <table>
+                <tr>
+                    <th>Types</th>
+                    <th>Definition</th>
+                    <th>Operator Symbol</th>
+                    <th>Example: <br> var x = 10;<br> var y = 10;</th>
+                    <th>Output <br> document.write()</th>
+                </tr>
+                <tr>
+                    <th>Assignment</th>
+                    <td>assign a value to a variable</td>
+                    <td>=</td>
+                    <td>var x = 10; <br> assign 10 to x </td>
+                    <td>4</td>
+
+                </tr>
+                <tr>
+                    <th>additon Assignment</th>
+                    <td>
+                        <p> adds the value of the <br> left and right <br>
+                            then assign the sum to the left operand.
+                        </p>
+                    </td>
+                    <td>+=</td>
+                    <td>x += y <br> x = x + y</td>
+                    <td>
+                        <p>20 <br> it can used concatenate or add strings together.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <th>subtraction Assignment</th>
+                    <td>
+                        <p>this operator subtracts the value of right and left operands <br>
+                            assigns the difference to the variable.
+                        </p>
+                    </td>
+                    <td>-=</td>
+                    <td> x -= y <br>same as <br> x = x - y </td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>Multiplication Assignment</th>
+                    <td>
+                        <p>This operator multiplies the value of the left and right operand.<br>
+                            assigns the product to the variable.</p>
+                    </td>
+                    <td>*=</td>
+                    <td>x *= y <br> same with <br> x = x * y </td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <th>Division Assignment</th>
+                    <td>
+                        <p> this operator divides the right and left operand <br>
+                            assigns quotient to the variable.
+                        </p>
+                    </td>
+                    <td>
+                        /=
+                    </td>
+                    <td>
+                        x /= y <br> same as <br> x = x / y
+                    </td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <th>Remainder Assignment</th>
+                    <td>
+                        <p>this operator divides a variable right and left operand <br>
+                            assigns the remainder value
+                        </p>
+                    </td>
+                    <td>%=</td>
+                    <td>x %= y <br> same as <br> x = x %= y</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>Exponentiation Assignment</th>
+                    <td>
+                        <p>
+                            this operator raises the value of left operand to the <br>
+                            power of the right operand <br>
+                            assigns the value to the variable.
+                        </p>
+                    </td>
+                    <td>**=</td>
+                    <td>x = 2; <br>
+                        y = 3;
+                        <br>
+
+                        x **= y<br>same as<br>
+                        x = x ** y
+                    </td>
+                    <td>2 raised to 3 times 2 * 2 * 2= 8</td>
+                </tr>
+            </table>
+        </div>
+        <h2>Advanced Assignment Operators</h2>
+        <p>Here other assignment Operators:</p>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Operator</th>
+                <th>Meaning</th>
+            </tr>
+            <tr>
+                <td>left shift assignment</td>
+                <td>x <<= y</td>
+                <td>x = x << y</td>
+            </tr>
+            <tr>
+                <td>Right shift assignment</td>
+                <td>x >>= y</td>
+                <td>x = x >> y</td>
+            </tr>
+            <tr>
+                <td>Unsigned right shit assignment</td>
+                <td>x >>>= y</td>
+                <td>x = x >> y</td>
+            </tr>
+            <tr>
+                <td>Bitwise AND assignment</td>
+                <td>x &= y</td>
+                <td>x = x & y</td>
+            </tr>
+            <tr>
+                <td>Bitwise XOR assignment</td>
+                <td>x ^= y</td>
+                <td>x = x ^ y</td>
+            </tr>
+            <tr>
+                <td>Bitwise OR operator</td>
+                <td>x |= y</td>
+                <td>x = x | y </td>
+            </tr>
+        </table>
+
+    </div>
+    <!--Javascript Comparison Operators-->
+    <div id="Comparison_operators">
+        <h2>Javascript Comparison Operators</h2>
+        <p>a comparison operator compares its operands and returns a <br>
+            <b>Boolean</b> based on whether the comparison true or false. </p>
+        <p>it can be used to compare strings,numebrs,booleans(logical),or object values.</p>
+
+        <p><strong>in Javascript there are 8 comparison operators</b></strong></p>
+        <!--types of comparison operators-->
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Operator</th>
+            </tr>
+            <tr>
+                <th>Equlity operator</th>
+                <td>==</td>
+            </tr>
+            <tr>
+                <th>Inequality operator</th>
+                <td>!=</td>
+            </tr>
+            <tr>
+                <th>Identity operator</th>
+                <td>===</td>
+            </tr>
+            <tr>
+                <th>Non-identity oeprator</th>
+                <td>!==</td>
+            </tr>
+            <tr>
+                <th>Greater than operator</th>
+                <td>></td>
+            </tr>
+            <tr>
+                <th>Greater than or equal operator</th>
+                <td>>=</td>
+            </tr>
+            <tr>
+                <th>Less than operator</th>
+                <td>
+                    << </td>
+            </tr>
+            <tr>
+                <th>Less than or equal operator</th>
+                <td>
+                    <= </td>
+            </tr>
+        </table>
+        <h2>Comparison Operators with example</h2>
+        <!--coparision table types and example-->
+        <table>
+            <tr>
+                <th>type</th>
+                <th>Description</th>
+                <th>symbol</th>
+                <th>Examaple</th>
+                <th>Output <br> document.write(x)</th>
+            </tr>
+            <tr>
+                <th>equlity operator</th>
+                <td>this operator returs true if its Operands <br> are equal,otherwise false.</td>
+                <td>==</td>
+                <td> 1) 4 == 4 ; <br> 2) 2 == 5 <br> 3)"2" == 2 <br> 4)"hi friend" == "hi friend" <br> 5) "hi" ==
+                    "hello" </td>
+                <td>1) true <br> 2) false <br>3) true<br>4) true<br>5) false </td>
+            </tr>
+            <tr>
+                <th>Inequality operator</th>
+                <td>this operator returns true if its operands <b>not equal,</b> otherwise false.</td>
+                <td>!=</td>
+                <td> 1) 4 != 4 ; <br> 2) 2 != 5 <br> 3)"2" != 2 <br> 4)"hi friend" != "hi friend" <br> 5) "hi" !=
+                    "hello" </td>
+                <td>1) false <br> 2) true <br> 3) false <br>4)false <br> 5)true </td>
+            </tr>
+            <tr>
+                <th>Identify operator</th>
+                <td>this operator know as <b>strict equality operator</b> <br> ,returns true if its operands are equal
+                    and the sametype.
+                </td>
+                <td>===</td>
+                <td>1) 3 === 3 <br> 2) "2" === 2 <br> 3) hi === "hi" <br>4) "hi" === "hi" </td>
+                <td>1) true <br>2) false <br> 3) false <br> 4) true</td>
+            </tr>
+            <tr>
+                <th>Non-identify Operator</th>
+                <td>this operator know as <b> strict Inequality operator</b> <br>
+                    returns true if its operands are of not of the same type <br>
+                    or not equal.
+                </td>
+                <td>!==</td>
+                <td>1) 3 !== 3 <br> 2) "2" !== 2 <br> 3) hi !== "hi" <br>4) "hi" !== "hi" </td>
+                <td>1) false <br>2) true <br> 3) true <br> 4) false</td>
+            </tr>
+            <tr>
+                <th>Greater than operator</th>
+                <td>this operator returns true if the left operands is greater than rigth operand.</td>
+                <td>></td>
+                <td>1) 3 > 2 <br>2) 2 > 3 <br>3) 3.5 > 2.5 <br> 4) 2.5 > 3.5 </td>
+                <td>1) true <br> 2) false <br> 3) true <br> 4) false </td>
+            </tr>
+            <tr>
+                <th>Greater than or Equal Operator</th>
+                <td>this operator or equal operator returns true if <br>
+                    the left operand is greaterThan or equal to the rigth operand.
+                </td>
+                <td>>=</td>
+                <td>1) 3 >= 2 <br>2) 2 >= 3 <br>3) 3.5 >= 2.5 <br> 4) 2.5 >= 3.5 <br>5) 3 >= 3</td>
+                <td>1) true <br> 2) false <br> 3) true <br> 4) false <br>5) true</td>
+            </tr>
+            <tr>
+                <th>less than operator</th>
+                <td>this operator returns true if the left oeprand is less than right oprand.</td>
+                <td>
+                    << /td>
+                <td>1) 3 < 2 <br>2) 2 < 3 <br>3) 3.5 < 2.5 <br> 4) 2.5 < 3.5 </td>
+                <td>1) true <br> 2) false <br> 3) true <br> 4) false </td>
+            </tr>
+            <tr>
+                <th>less than or equal operator</th>
+                <td>less than or equal operator returns true if the left operand <br> is less than or equal to the right
+                    operand.</td>
+                <td>
+                    <=< /td>
+                <td>1) 3 <= 2 <br>2) 2 <= 3 <br>3) 3.5 <= 2.5 <br> 4) 2.5 <= 3.5 <br>5) 3 <= 3</td>
+                <td>1) false<br> 2) true <br> 3) false <br> 4) true <br>5) true</td>
+            </tr>
+        </table>
+        <p>Comparison operators are mostly used in Coditional statements.<br>
+            The most basic conditional statement is the if statement.</p>
+
+        <p class="sp">Examaple Program 1</p>
+        <div class="SampleCode">
+            <span>if(2==2){</span> <br>
+            <span>document.write("Hi i'm Pandeeswaran");</span> <br>
+            <span>}</span> <br>
+            <p><b>Output is</b></p>
+            <p>Hi i'm Pandeeswaran</p>
+            <p>above program 2 is equal to 2 so program run. </p>
+        </div>
+        <p class="sp">Examaple Program 2</p>
+        <div class="SampleCode">
+            <span>if(2 !== 2){</span> <br>
+            <span>document.write("Hi i'm Pandeeswaran");</span> <br>
+            <span>}</span> <br>
+            <p><b>Output is</b> </p>
+            <p></p>
+            <p>above program 2 is equal to 2 but we used non-identify operator( !== ) . <br> so false program not run.
+            </p>
+
+        </div>
+    </div>
+    <!--javascript logical and condtitional operators-->
+    <div id="logical_operators">
+        <h2>Javascript Logical Operators</h2>
+        <p><b>Logical Operators </b> are used with <b>Booleans.</b>
+            <br>when they are used with boolean(logical)values they return a boolean value. <br>
+            In javascript,there are 3 logical operators.
+        </p>
+        <!--table for logical operator types-->
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Operator</th>
+                <th>Usage</th>
+            </tr>
+            <tr>
+                <th>Logical AND</th>
+                <td>&&</td>
+                <td>experssion1 && experssion2</td>
+            </tr>
+            <tr>
+                <th>Logical OR</th>
+                <td>||</td>
+                <td>experssion1 || experssion2</td>
+            </tr>
+            <tr>
+                <th>Logical NOT</th>
+                <td>!</td>
+                <td>!experssion</td>
+            </tr>
+        </table>
+        <!--logical AND (&&)-->
+        <h3 class="sub-tit"> logical AND (&&)</h3>
+        <p>The logical AND (&&) operator returns true if <b>both operands(which are experssion)</b> are true.</p>
+        <!--example-->
+        <div class="type-syntax">
+            <span>true && true; // return true </span> <br>
+            <span>true && false; //return false</span> <br>
+            <span>2 == 2 && 3 == 3; //return true </span> <br>
+            <span>2 == 3 && 3 == 3; // return false </span> <br>
+            <span>4 > 3 && 2 < 3; // return true</span> <br>
+                    <span>3 > 4 && 3 < 2; //return false</span>
+        </div>
+        <!--logical OR (||)-->
+        <h3 class="sub-tit">logical OR (||)</h3>
+        <p>The logical OR (||) operator returns true if either of the operand is true.</p>
+        <div class="type-syntax">
+            <span>true || true; // return true </span> <br>
+            <span>true || false; //return true</span> <br>
+            <span>false || false; // return false</span> <br>
+            <span>2 == 2 || 3 == 3; //return true </span> <br>
+            <span>2 == 3 || 3 == 3; // return true </span> <br>
+            <span>4 > 3 || 2 > 3; // return true</span> <br>
+            <span>3 > 4 || 3 < 2; //return false</span>
+        </div>
+        <!--logical NOT(!)-->
+        <p>The logical NOT (!) operator returns true if the operand is not true.</p>
+        <div class="type-syntax">
+            <span>!(true); // return false</span> <br>
+            <span>!(false); // return true</span> <br>
+            <span>!(1 == 1); // return false</span> <br>
+            <span>!(1 > 2); // retrun true</span>
+        </div>
+        <h2>Using Logical Operators with conditional statement</h2>
+        <p>Logical operators are commonly used with conditional statements. <br>
+            The example below,show how to use a logical oeprator in an if statement.</p>
+        <div class="type-syntax">
+            <span>if(2 == 2 && 3 == 3) {</span> <br>
+            <span>document.write("the condition is true.")</span> <br>
+            <span>}</span> <br>
+            <span>if(2 == 3 && 2 == 2) {</span> <br>
+            <span>document.write("the condition is false.")</span> <br>
+            <span>}</span>
+        </div>
+        <p> <u>Output is </u></p>
+        <div>
+            <img src="/javascript code shots/log with con  .png" alt="logical and conditional statement"
+                class="output-img">
+            <img src="/javascript code shots/log with con 1 .png" alt="logical and conditional statement"
+                class="output-img">
+        </div>
+        <!--ternary Operator-->
+        <h2 id="Ternary_Operator">javascript conditional Ternary Operator</h2>
+        <p>The conditional or the ternary operator is the only operator
+            <br> that takes three operands. <br>
+            <b>Condition ? value1 : value2 </b> <br>
+            if the condition is true,the operator returns value1, otherwsie it returns value2. <br>
+            this is commonly used with a variable. <br>Ternary Operator is Alternative for if function.
+        </p>
+        <div class="type-syntax">
+            <span>var testScore = 80;</span> <br>
+            <span>var test Result = (testScore > 75 ) ? "passed" : "failed"; </span> <br>
+            <span>document.getELementById("demo").innerHTML= testResult;</span> <br>
+        </div>
+        <p><u>output is</u></p>
+        <div>
+            <img src="/javascript code shots/con ternary .png" alt="conditional with ternary" class="output-img">
+            <img src="/javascript code shots/con ternary 1 .png" alt="conditional with ternary" class="output-img">
+        </div>
+
+        <p class="sp">Sample Program 1</p>
+
+        <span>//If peron's age is more than 18,</span> <br>
+        <span>//They are 'Adult' Category ,otherwise,</span> <br>
+        <span>//They are a 'Child' Category </span> <br>
+        <div class="SampleCode">
+
+            <span>let age =24;</span>
+            <span>let type = age > 18 ? "Adult Ticket" : "Child Ticket";</span>
+            <span>console.log(type);</span>
+            <p><u>Output is</u></p>
+            Adult Ticket
+        </div>
+        <!--bitwise operators-->
+        <div id="bitwise_operators">
+
+            <h2>Bitwise_Operators</h2>
+            <p>
+                <strong>Bitwise Operators based binary codes <br>
+                    Human code -> machine Code(0,1) <br>
+                    1 -> 00000001 -> 1 <br>
+                    2 -> 00000010 -> 2 <br>
+                    3 -> 00000011 -> 3</strong>
+            </p>
+        
+
+            <textarea rows="20" cols="45">
+// console.log(1|2); // Bitwise OR
+// console.log(1&2); // Bitwise AND
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//sample program
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+// W -> 00000100 -> 1  Write
+// R -> 00000010 -> 2  Read
+// E -> 00000001 -> 0  Execute
+
+const readPermission = 4;
+const writePermission = 2;
+const executePermission = 1;
+
+let myPermission = 0;
+
+myPermission = myPermission | writePermission |readPermission  ;
+
+let message =(myPermission & readPermission) ? 'Yes':'No';
+
+console.log(message); // output is yes
+
+
+        </div>
+
+
+    </div>
+
+    <!--Arithmetic Operators-->
+    <h2> Arithmetic_Operators</h2>
+    <p>
+        The <b>arithmetic operators</b> used to perform arithmetic operation. <br>
+        (additon,subtraction,multiplication and division.)
+    </p>
+    <p>here the symbols used arithmetic operation:</p>
+    <div class="syntax">
+        <ul>
+            <li>Additon: +</li>
+            <li>Subtraction: - </li>
+            <li>Multiplication: *</li>
+            <li>Division: /</li>
+        </ul>
+    </div>
+    <strong>For Example</strong>
+    <br>
+    <br>
+    <p>
+        let num1=5;
+        let num2=10;
+        <Br>
+        <Br>
+        // used comment function in Javascript
+        <Br><Br>
+        console.log(num1-num2);<Br>
+        console.log(num1*num2);<Br>
+        console.log(num1/num2);<Br>
+        console.log(num1%num2);<Br>
+        console.log(num1 ** num2);<Br>
+
+        <Br><Br>
+        //Increment(++)
+        <Br>
+        console.log(num1++);<Br>
+        console.log(num1);<Br>
+        <Br>
+        o/p in console (5)<Br><Br>
+        console.log("Increment operator used (++) simple ");<Br>
+        <Br>
+        console.log(++num1);<Br>
+        console.log(num1);<Br><Br>
+
+        o/p in console (6)<Br><Br>
+
+        //Decrement operator (--)<Br>
+
+        console.log("Decrement operator used (--) simple ");<Br><Br>
+        console.log(--num1);<Br>
+        console.log(num1);<Br><Br>
+        o/p in console (4 )<Br>
+        <Br>
+        console.log(--num2);<Br>
+        console.log(num2);<Br>
+        <Br>
+        o/p in console (9)<Br>
+    </P>
+
+    <h3>Assignment_operators</h3>
+    <Br><Br>
+    <pre>
+    <p>console.log("Assignment Operators");<Br>
+        let x=10;<Br><Br>
+
+        //assignment operators mean assign the values in javascript
+        <br>
+
+        //example<br>
+
+        //x++ (add 1 value)<br>
+        //x= x+1<br>
+
+        x += 5<br>
+        x -= 5<br>
+        x *= 5<br>
+        x /= 5<br>
+        x %= 5</p>
+
+    console.log(x);
+
+    <h2>Comparison_operators</h2>
+    <strong>Example Programs</strong>
+    
+<pre>
+    <p>
+        //Comparison Operators
+console.log("Comparison operators");
+console.log("Comparison operators produces boolean(true,false) as a result");
+
+ // greater or less simples ( < or > )
+ // great >
+//less <
+//for example
+
+ console.log(1>5);
+
+// O/p is false
+
+ console.log(2>1);
+// O/p is true
+
+<strong>//sample program </strong>
+
+ let y=1;
+
+console.log(y>5); //1<5
+ true ,false
+ OutPut is false
+
+ lessThan or equal Too (<= )
+ greaterThan or equal Too ()>=)   
+
+<strong>// Example program:</strong>
+
+let z=5;
+
+// Equality Operators
+console.log(z===5 ); //5 ===5
+console.log(z !== 5 ); // 5 !==5
+ 
+// Relational operators 
+console.log(z < 5); //less than
+console.log(z <= 5); //lessThan or Equal Too
+
+console.log(z > 5); //Greater than 
+console.log(z >= 5); //GreaterThan or Equal Too
+
+// String comparison
+console.log("String comparison");//dictionary
+
+console.log('pandi' < 'eswaran'); 
+
+//Comparsion of different type
+console.log('1' < 5); // 1 < 5
+console.log(true == 1); 
+// 1 -true
+// 0 - false 
+    </p>
+</pre>
+
+    <h2>Equlity_operator</h2>
+    <pre>
+    <p>
+        console.log("Equality Operator")
+
+//Strict Equality Operator(Datatype + Value)
+console.log(1 === 1); // number === number
+
+//output is true
+
+console.log('1' === 1); // String === Number
+
+//output is false
+
+//Lose Equality Operator
+
+console.log(1 == 1); //Number == Number
+//output is true 
+
+console.log('1' == 1) //string == Number
+//output is true 
+
+console.log(true == '1'); //boolean == Number
+//output is true
+
+    </p>
+</pre>
+    <h2>Ternary_Operator</h2>
+    <pre>
+    <p>
+        <h4></h4>
+
+console.log("Ternary Operator")
+
+<strong>syntax</strong>
+
+condtion ? 'value1' : 'value2'
+
+
+<strong> Sample Program</strong>
+
+
+    </p>
+</pre>
+
+    <h2>logical_operators</h2>
+
+    <pre>
+    <p>
+        <strong>//Logical Operators</strong>
+ <strong style="font-size: medium;"> types of Logical Operators</strong>
+1. logical AND(&&)
+2. Logical OR (||)
+ 3. NOT(!)
+
+// 1. logical AND(&&)
+//returns TRUE if both Operands are TRUE
+console.log(false && true); // Output is false
+
+console.log(true && true);  //Output is true
+
+//Logical OR (||)
+
+// returns TRUE if anyone oeprands are TRUE
+console.log(false || true); // output is true
+console.log(true || true);
+ 
+//NOT(!)
+console.log(true); //Output is false
+    </p>
+</pre>
+
+    <h4> Example Programs</h4>
+    <textarea rows="20" cols="45">
+    console.log('Logical Operators');
+
+// sample program For Logical AND Operator
+console.log("Bank Loan Eligiblity Program");
+//HighIncome, CIBILScore  -> loan Eligible, Ineligible
+
+// let HighIncome= true;
+
+// let CIBILScore =true;
+
+// let EligiblePerson= HighIncome && CIBILScore;
+
+// console.log("Status:" + EligiblePerson);
+
+output is 
+
+Status:true
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+// sample program For Logical || Operator and ! Operator
+console.log("|| and ! operators");
+
+let HighIncome =true;
+
+let CIBILScore = true;
+
+let EligiblePerson =HighIncome || CIBILScore
+
+let applicationStatus = !EligiblePerson
+
+console.log("loan status:" + EligiblePerson  );
+console.log("Application Status:" + applicationStatus); 
+
+Output is :
+
+loan status: TRUE
+Application Status:false   
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+</textarea>
+            <h4>Falsy and Truty </h4>
+            <pre>
+        <p>
+//fasly(false)
+//undefined
+//null
+//0
+//false
+// '' -> ""
+// NaN    
+
+<strong>Truty -> Anything that is not falsy is -> Truty </strong>
+
+//This is Truty Example
+
+let userColor = "red";
+let defaultColor ="blue";
+
+  let currentColor = userColor || defaultColor;
+  console.log("Selected Color:" + currentColor);
+ output is : Selected Color:blue
+
+//This is falsy Example
+
+let userColor = undefined;
+let defaultColor ="blue";
+
+  let currentColor = userColor || defaultColor;
+  console.log("Selected Color:" + currentColor);
+
+  //output is : Selected Color:blue
+</p>
+
+    <script src="/operators/arithametic_operators.js"></script>
+    <script src="/operators/Assignment_operators.js"></script>
+    <script src="/operators/Comparison_operators.js"></script>
+    <script src="/operators/equlity_operator.js"></script>
+    <script src="/operators/Ternary_Operator.js"></script>
+    <script src="/operators/logical_operators.js"></script>
+    <script src="/operators/bitwise_operators.js"></script>
+
+</body>
+
+</html>

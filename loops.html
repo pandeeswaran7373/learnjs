@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+        <a href="index.html" id="title">Learn Javascript</a>
+        <ul id="header-nav">
+
+            <li><a href="coditional.html">Coditional</a></li>
+            <li><a href="operators.html">Operators</a></li>
+            <li><a href="loops.html">Loops</a></li>
+            <li><a href="Obj&OOP.html">OOP</a></li>
+
+        </ul>
+        </div>
+    </div>
+    <h1 class="head-title">Javascript Loops</h1>
+
+    <h3 style="background-color: red;color: black;">Types Of Loops</h3>
+    <div id="nav-bar">
+    <ul>
+        <li><a href="#for-loop" >For Loop</a></li>
+        <li><a href="#while-loop">While Loop</a></li>
+        <li><a href="#do-while-loop">Do While Loop</a></li>
+        <li><a href="#for-in-loop">For-in Loop</a> </li>
+        <li><a href="#for-of-loop">For-of Loop</a></li>
+    </ul>
+</div>
+    <h2 id="for-loop"> For Loop</h2>
+    <p class="syntex">Syntex</p>
+    <p style="font-weight: bold;font-size: x-large;">for (initialExpression; Condition; Step){<br>
+        console.log("numebr #1");<br>
+        }<br>
+    </p>
+    <h3>Sample Program</h3>
+    <textarea rows="20" cols="40" disabled>
+
+        for(let i=1; i<=5; i++){
+            console.log("Number #",i);
+        }
+        
+        console.log output is 
+        
+        Number # 1
+        
+         Number # 2
+        
+         Number # 3
+        
+         Number # 4
+        
+         Number # 5
+    </textarea>
+    <h3>Sample Program 2("find Odd Number")</h3>
+    <textarea rows="20" cols="40" disabled>
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        //sample program 2("find Odd Number")
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+for (let j = 0; j <= 10; j++) {
+    if (j % 2 !== 0) {
+        console.log("Odd NUmber:#" + j);
+    }
+}
+
+
+//console.log output is 
+Odd NUmber #0
+
+Odd NUmber #1
+
+Odd NUmber #3
+
+Odd NUmber #5
+
+Odd NUmber #7
+
+Odd NUmber #9
+    </textarea>
+
+    <h3>Sample program 2("find Even Number")</h3>
+    <textarea rows="20" cols="40" disabled>
+    //sample program 2("find Even Number")
+
+    for (let k = 0; k <= 10; k++) {
+        if (k % 2 !== 1) {
+            console.log("Odd NUmber:#" + k);
+        }
+    }
+    //console.log output is 
+    Odd NUmber:#0
+    
+    Odd NUmber:#2
+    
+    Odd NUmber:#4
+    
+    Odd NUmber:#6
+    
+    Odd NUmber:#8
+    
+    Odd NUmber:#10
+   </textarea>
+    <h2 id="while-loop">While Loop</h2>
+    <p class="syntex">syntex of while loop</p>
+    <p style="font-weight:bold;font-size:x-large">
+        initial Experession ;<br>
+        <br>
+        while (condition){<br>
+        <br>
+        console.log();<br>
+        <br>
+        }<br>
+        step;<br>
+        }<br>
+    </p>
+    <h3>Sample Program - Odd Number</h3>
+    <textarea rows="20" cols="40" disabled>
+    let m=20;
+
+    while  (m >=1){
+        if (m%2 !==0){
+        console.log("The number is :" + m);
+    
+    }
+       m--;
+    }    
+
+    //console.log output is:
+    
+    The number is :19
+
+    The number is :17
+    
+    The number is :15
+    
+    The number is :13
+    
+    The number is :11
+    
+    The number is :9
+    
+    The number is :7
+    
+    The number is :5
+    
+    The number is :3
+    
+    The number is :1
+
+   </textarea>
+
+    <h3>Sample Program - Even Number</h3>
+    <textarea rows="20" cols="40" disabled>
+    console.log("Even number");
+
+    let n=0;
+    
+    while (n<=20) {
+    
+        if(n%2 !==1){
+            console.log("Even Nnumbers #"+ n);
+        }
+        
+        n++;
+        
+    }
+
+    console.log output is  
+
+    Even Nnumbers #0
+    
+    Even Nnumbers #2
+    
+    Even Nnumbers #4
+        
+    Even Nnumbers #6
+    
+    Even Nnumbers #8
+    
+    Even Nnumbers #10
+   
+    Even Nnumbers #12
+    
+    Even Nnumbers #14
+     
+    Even Nnumbers #16
+  
+    Even Nnumbers #18
+      
+    Even Nnumbers #20
+
+   </textarea>
+    <h2 id="do-while-loop">Do-While-Loop</h2>
+   <p class="syntex">Syntex</p>
+    <p style="font-weight: bold;font-size: x-large;">
+        do{<br>
+        condition <br>
+        <br>
+        } while()<br>
+    </p>
+    <h3>Sample Program</h3>
+    <textarea rows="20" cols="40" disabled>
+
+     let o=0;
+
+    do {
+    if (o % 2 !==0) {
+        console.log("Odd Number for While loop#"+ o);
+    }
+    o++;
+
+} while (o <= 10);
+
+console.log output is
+
+Do-While Loop
+
+Odd Number for While loop#1
+
+Odd Number for While loop#3
+
+Odd Number for While loop#5
+
+Odd Number for While loop#7
+
+Odd Number for While loop#9
+</textarea>
+
+    <h2 id="for-in-loop">For-in-Loop</h2>
+
+    <p class="syntex">Syntex</p>
+
+    <h3>Sample Program</h3>
+
+    <textarea rows="20" cols="40" disabled>
+        Note;
+        (notation methods:
+        Dot Type //person.name
+        
+        array type //person['name']
+
+        )
+        
+            const person={
+            name:'pandi',
+            age:22,
+            sex:'male'
+        }
+        
+        for(let key in person){
+        console.log( key +":" + person[key]); 
+        }
+
+        console.log output is
+
+        name:pandi
+        
+        age:22
+        
+        sex:male
+
+        ``````````````````````
+        //another example
+        ``````````````````````
+
+        let colors =['red','blue','green'];
+        
+        for(let key in colors){
+            console.log(colors[key]);
+        }
+
+        console.log output is
+         
+        red
+
+        blue
+
+        green
+    </textarea>
+    <h2 id="for-of-loop">For-of Loop</h2>
+    <p class="syntex">Syntex</p>
+
+    <h3>sample Proram</h3>
+    <textarea rows="20" cols="40" disabled>
+        let colors =['red','blue','green'];
+
+        for(let pandi of colors){
+    console.log("colors: " +pandi);
+      }
+
+      console.log output is
+
+      colors: red
+      
+      colors: blue
+      
+      colors: green
+
+    </textarea>
+
+    <script src="/loops/loops.js"></script>
+</body>
+
+</html>

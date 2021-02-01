@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <div id="header">
+        <div class="container">
+            <a href="index.html" id="title">Learn Javascript</a>
+            <ul id="header-nav">
+
+                <li><a href="coditional.html">Coditional</a></li>
+                <li><a href="operators.html">Operators</a></li>
+                <li><a href="loops.html">Loops</a></li>
+                <li><a href="Obj&OOP.html">OOP</a></li>
+
+            </ul>
+        </div>
+    </div>
+   
+    <div>
+        <h2>Javascript Object & OOP(Object Oriented Program)</h2>
+    </div>
+    <h2>Sample program 1</h2>
+    <div>
+        <textarea rows="20" cols="60" disabled>
+        let name = "pandi";
+let age = 24;
+let interest = ['learn new things,books,music'];
+let address = {
+    city: "periyakulam",
+    state: "tamilnadu",
+}
+
+function greeting(){
+//let msg="my name is "+ name + " my interest is "+ interest;  //method 1
+
+let msg= `my name is ${name} my interest is ${interest}`       //method 2
+console.log(msg);
+}
+greeting();
+
+console.log output is --  my name is pandi my interest is learn new things,books,music
+    </textarea>
+    </div>
+    <div>
+        <h2>Sample program 2</h2>
+        <textarea rows="25" cols="60">
+    //Object programming
+
+let person = {
+    //key:value,
+
+    name:"Pandi",
+    age: 24,
+    interest: ['read Books,listen Music,coding ,etc'],
+    isAlive: true,
+    address: {
+        city: "Theni",
+        state: "Tamil Nadu",
+    },
+    greeting: function () {
+        let msg = `my name is ${this.name}, my Interest is ${this.interest}`;
+        console.log(msg);
+
+    }
+
+};
+(person.greeting());
+
+console.log output is -- my name is Pandi, my Interest is read Books,listen Music,coding ,etc
+</textarea>
+    </div>
+    <div id="factoryFn">
+        <h2>factory-function</h2>
+        <strong>Condtions:</strong>
+        <p>camelcase: myFirstName</p>
+        <h3>Sample Program</h3>
+        <textarea rows="25" cols="60" disabled>
+        //factory function 
+        console.log("~~~~Factory-function~~~~");
+        
+        function createPerson(name) {
+            return {
+                name, //name:name //key:value
+                greeting() {
+                    let msg = `my name is ${this.name}`;
+                    console.log(msg);
+                }
+            };
+        }
+        
+        let pandi = createPerson("pandi");
+        let eswaran =createPerson("Eswaran")
+        pandi.greeting();
+        eswaran.greeting();
+
+        console.log  output is --
+           my name is Pandi
+           my name is Eswaran
+
+     </textarea>
+    </div>
+    <div id="costructorFn">
+        <h2>Constructor-function</h2>
+        <strong>Condtions:</strong>
+        <p>pascal -> MyFirstName</p>
+        <h3>Sample Program</h3>
+        <textarea rows="25" cols="60" disabled>
+        console.log("constructor function");
+
+function Person(name){
+    this.name= name;
+    this.greeting= function() {
+        console.log(`my name is ${this.name}`);
+    }
+}
+let pandi = new Person("pandi");
+pandi.greeting();
+
+console.log output is--
+
+my name is pandi
+
+    </textarea>
+    </div>
+    <div id="dynamicObjects">
+        <h2>Dynamic-Nature-of-Objects</h2>
+        <p style="font-weight: bold;font-size: larger;">dynamic Objects Can be edit,create,delete</p>
+    <h3>Sample program</h3>
+        <textarea rows="25" cols="60">
+        //dynamic nauture of objects
+
+const love={
+    name:"pandi"  //key : value
+}
+
+love.age=22;  //adding another varaiable
+
+love.greeting=function () {}
+
+delete love.age;  //remove varaiable
+
+delete love.greeting 
+
+console.log(love);
+
+console.log output is --
+
+[object Object]: {age: 22, greeting: function () {}, name: "pandi"} // adding varaiable
+
+[object Object]: {name: "pandi"} //remove varaiable 
+
+    </textarea>
+
+    </div>
+    <div>
+        <h2>javascript-Property</h2>
+        <p style="font-size:x-large ">//java script has already constructor for every code </p>
+        <textarea rows="25" cols="60" disabled>
+         console.log("JavaScript Property");
+
+
+     let name ="pandi";  // ->new  string ("pandi")
+     let age =22;        //new numberLiterals -> new Number()
+     let isAlive=true;   //new BooleanLiterals ->  new Boolean ()
+
+console.log(name,age,isAlive);
+
+//cosole.log output is 
+
+//pandi 22 true 
+
+//above code has a simple 
+
+//let see actual code of javascript
+
+
+let name = new String("pandi");  //string("pandi")
+let age = new Number(22);        //number(22)
+let isAlive = new Boolean(true); //Boolean(true)
+
+console.log(name, age, isAlive);
+
+
+//this is the output console.log
+
+pandi 22 true
+
+
+javascriptProperty.js (19,1)
+
+[object String]: {0: "p", 1: "a", 2: "n", 3: "d", 4: "i"...}
+
+javascriptProperty.js (19,1)
+
+[object Number]: {}
+
+javascriptProperty.js (19,1)
+
+[object Boolean]: {}
+        </textarea>
+    </div>
+    <div id="pri-ref">
+        <h2>Primitive And Reference Types</h2>
+        <img src="images/1.png" alt="primitive and ref types" width="400" height="200">
+        <br>
+        <br>
+        <textarea rows="15" cols="40" disabled>
+let x=10;
+let y=x;
+
+console.log(y);  //output is 10 
+
+let x=10;
+let y=x;
+
+x=20;
+
+console.log(y);  //output is 10
+
+This is primitive Type
+
+</textarea>
+        <img src="images/2.png" alt="primitive type" width="400" height="200">
+        <br><br>
+        <textarea rows="20" cols="40" disabled>
+Reference-type
+
+let x ={
+value:10
+};    
+
+let y=x;
+
+x.value =20;
+
+console.log output is 
+x
+
+[object Object]: {value: 20}
+
+y
+
+[object Object]: {value: 20}
+</textarea>
+        <img src="images\3.png" alt="refrence type" width="400" height="200">
+        <img src="images\4.png" alt="refrence type" width="400" height="200">
+    </div>
+
+    <br>
+    <br>
+
+    <h2>Sample Program</h2>
+    <textarea rows="30" cols="40" disabled>
+
+sample program
+
+let cart={
+available:5
+};
+
+function UpdateCart(cart) {
+
+cart.available++;
+}
+
+UpdateCart(cart);
+
+console.log("carts Available:",cart);
+
+
+//console.log output is 
+
+
+// carts Available: [object Object]
+
+
+// pri_and_ref_types.js (41,1)
+
+// [object Object]: {available: 6}
+
+</textarea>
+
+    <script src="obj&oop/object&oop.js"></script>
+    <script src="/obj&oop/function.js"></script> 
+    <script src="/obj&oop/dynamic.js"></script>
+    <script src="/obj&oop/javascriptProperty.js"></script>
+    <script src="/obj&oop/pri_and_ref_types.js"></script>
+
+
+</body>
+
+</html>

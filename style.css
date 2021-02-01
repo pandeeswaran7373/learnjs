@@ -1,0 +1,163 @@
+
+#header{
+    background-color:lightblue;
+    border-radius: 5px;
+    padding: 25px;
+}
+
+#header-nav{
+    display: block;
+    float: right;
+    margin-top:0;
+}
+#header-nav li{
+   
+    display: inline;
+    padding-left: 20px;
+}
+#header a{
+color:black;
+text-decoration:none;
+
+text-transform:uppercase;
+letter-spacing: 0.1em;
+}
+
+#header a:hover{
+    color:green;
+}
+.container{
+    max-width: 1000px;
+    margin: 0 auto
+}
+body{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    background-image: url("/javascript code shots/bg.jpg");
+    background-attachment: fixed;
+    
+    color: white;
+    
+}
+
+/* table design*/
+
+table,tr,th,td{
+    border: 1px solid white;
+    border-collapse: collapse;
+    padding: 10px;
+    text-align: center;
+    
+}
+
+
+/* syntex for javascript elements type */
+
+.syntax{
+    width: 500px;
+    background-color:darkmagenta;
+    border: 3px solid;
+    border-color:black;
+    margin: 10px ;
+    padding: 20px;
+    border-radius: 30px;
+    
+    
+}
+
+
+/*heading on the topics*/
+h2{
+    background-color: white;
+    color: black;
+}
+
+/*sub-head on topics*/
+
+.sub-head{
+    color: blue;
+    font-size: x-large;
+   font-weight: bolder;
+}
+/* sub title on topics*/ 
+.sub-tit{
+     color: brown;
+     font-size:20px;
+     text-decoration:underline;
+     font-weight: bold;
+}
+
+.head-title{
+    color:white ;
+}
+
+
+
+.code-writing {
+    font-size: x-large;
+}
+
+/* sample code box*/
+.sp{
+    color:darkgreen;
+
+}
+.SampleCode{
+    width: 400px;
+    background-color: tomato;
+    border: 3px solid;
+    border-color:black;
+    margin: 10px ;
+    padding: 20px;
+    border-radius: 30px;
+    font-size: medium;
+    
+}
+
+/*image section*/
+.output-img{
+    width: 300px;
+    height: 150px;
+
+    border: 3px solid lightgoldenrodyellow;
+    border-radius: 10px;
+    padding: 2px;
+}
+.Data-type li{
+    font-size: x-large;
+    text-decoration: underline;
+    font-style:italic;
+    color:blue;   
+    margin-top: 15px;
+
+}
+.type-syntax{
+    
+    width:450px;
+    margin: 2px;
+    border: 1px solid whitesmoke;
+    padding: 10px;
+    padding-left: 20px;
+    background-color:darkred;
+    border-radius: 30px;
+    font-size :17px;
+
+}
+.topics{
+    text-decoration: none;
+    color: blue;
+    font-size: larger;
+}
+
+/*****  javascript operators page *****/
+
+/* javascript operators types   */
+#js-op a{
+    text-decoration: none;
+    font-size:large;
+    
+}
+
+#js-op li{
+    font-size: 20px;
+}

@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Learn Javascript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+    <div id="header">
+        <div class="container">
+            <a href="index.html" id="title">Learn Javascript</a>
+            <ul id="header-nav">
+                <li><a href=""></a></li>
+
+                <li><a href="coditional.html">Coditional</a></li>
+                <li><a href="operators.html">Operators</a></li>
+                <li><a href="loops.html">Loops</a></li>
+                <li><a href="Obj&OOP.html">OOP</a></li>
+
+            </ul>
+        </div>
+    </div>
+
+    <p style="font-size: x-large;"><b>What is Javascript?</b></p>
+    <p style="color: white ;font-size:25px;">Javascript is a Programming or a scripting language.
+        that allows the implements of features on a web pages<br>
+    </p>
+    <div>
+        <h2>JavaScript Writing Code</h2>
+        <p> JavaScript codes should be written inside the <b>"script"</b> element</p>
+        <div class="syntax">
+            &lt;script&gt;
+            <br>
+            document.write("hello World");
+            <br>
+            &lt;/script&gt;
+        </div>
+
+        <p style="font-size: x-large;">where should we put the <b>"script"</b> element? </p></strong></p>
+        <ol>
+            <li>
+                <p style="font-size:large;">Internal JavaScript</p>
+            </li>
+            <li>
+                <p style="font-size:large;">External JavaScript</p>
+            </li>
+
+            <p class="sub-tit">Internal JavaScript</p>
+            <p>The Script element can either be placed in the <b>head</b> and <b>body</b> or both</p>
+            <strong>example program</strong>
+            <br>
+            <br>
+            <textarea name rows="23" cols="60">
+
+// javaScript script palced in head tag
+
+&lt;html&gt;          
+&lt;head&gt;
+&lt;title&gt; JavaScript in Head &lt;/title&gt;
+        
+&lt;script type="text/javaScript"&gt;
+function  myfunc(){
+    document.getElementById("demo").innnerHTML="hello Everyone!";
+                    
+ }
+&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p&gt; hello World &lt;/p&gt;
+&lt;button type="button" onclick="myfunc()" &gt; change value &lt;/button&gt;
+&lt;/body&gt;
+&lt;/html&gt; 
+</textarea>
+
+            <p class="sub-tit">External JavaScript</p>
+            <p>JavaScript files have the file name extension of .js e.g. <strong>script.js</strong></p>
+            <p>Using External script files is beneficial when multiple web pages use the same script</p>
+            <p>it also organizes codes and help maintain readability as JavaScript is separated from html </p>
+            <div id="ex-js">
+                <strong>Sample program</strong>
+                <br>
+                <br>
+
+                <textarea rows="23" cols="60">
+ //javaScript placed in body and External     
+    
+&lt;html&gt;          
+&lt;head&gt;
+&lt;title&gt; JavaScript in Head &lt;/title&gt;       
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p&gt; hello World &lt;/p&gt;
+&lt;button type="button" onclick="myfunc()" &gt; change value &lt;/button&gt;
+&lt;script type="text/javaScript"&gt src="javaScript.js";
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt; 
+
+//javaScript.js --file
+
+function pandi() {
+    document.getElementById("demo").innerHTML="hello Everyone";
+    
+}
+
+</textarea>
+            </div>
+    </div>
+    <div>
+        <h2>JavaScript displaying Output</h2>
+
+        <p>Displaying or Generating output in javaScript is very important especially when learning the language.
+        </p>
+        <p>javaScript Statements or codes blocks are corect,you can output data to check.</p>
+        <p><strong>javaScript 4 ways of display output</strong></p>
+        <ul>
+            <li>Using Console</li>
+            <li>Using Dialog Boxes</li>
+            <li>Writing to HTML Elements</li>
+            <li>Writing to the Browser Window</li>
+        </ul>
+        <p class="sub-tit">Using Console </p>
+        <p> <strong> console.log()</strong> function we can write into the browser's developer console.</p>
+        <div class="SampleCode">
+            var x = 5; <br>
+            var y = 5; <br>
+
+            var sum = x + y; // adds x and y <br>
+
+            console.log(sum) //print 10
+
+        </div>
+        <p> <u>Output:</u> </p>
+        <img src="/javascript code shots/console.log.png" alt="console.log" class="output-img">
+
+
+        <p class="sub-tit">Using dialog Boxes</p>
+        <p><strong>alert()</strong>function, output data on a dialog box</p>
+        <div class="SampleCode">
+            function myfunc(){ <br>
+            var x = 5; <br>
+            var y = 5; <br>
+            var sum = x + y; // adds x and y <br>
+            } <br>
+
+            alert(sum); //shows 10
+        </div>
+        <p><u>Output</u></p>
+        <img src="/javascript code shots/dilog box.png" alt="dialog-box" class="output-img">
+
+        <P class="sub-tit">Writing to HTML Elements</P>
+        <p>Using <strong>property</strong> ,we can change the content or text of the selected element</p>
+        <p><strong>document.getElementById() </strong>funtion to select an element.</p>
+        <div class="SampleCode">
+            &lt;script&gt; <br>
+            var x = 5; <br>
+            var y = 5; <br>
+
+            var sum = x + y; // adds x and y <br>
+            document.getElementById("demo").innerHTML=sum; //writes 10 <br>
+            &lt;/script&gt;
+
+        </div>
+        <p><u>Output</u></p>
+        <img src="/javascript code shots/innerhtml.png" alt="innerhtml" class="output-img">
+        <img src="/javascript code shots/innerhtml 1.png" alt="write" class="output-img">
+        <img src="/javascript code shots/innerhtml 2.png" alt="write" class="output-img">
+
+        <p class="sub-tit">Writing to the Browser Window</p>
+        <p><strong>document.writing()</strong>function used to write the content of the document</p>
+        <p><strong>Note!</strong>This is used to testing purpose as it will delete all existing HTML in the Current
+            page.</p>
+        <div class="syntax">
+            &lt;script&gt; <br>
+            function myfunc() { <br>
+            var x = 5; <br>
+            var y = 5; <br>
+            var sum = x + y; // adds x and y <br>
+            document.write(sum); <br>
+            } <br>
+            &lt;/script&gt;
+
+        </div>
+        <p><u>Output</u></p>
+        <img src="javascript code shots/documentWrite fn.png" alt="documentWrite" class="output-img">
+        <img src="/javascript code shots/documentWrite fn 1.png" alt="write" class="output-img">
+        <img src="/javascript code shots/documentWrite fn 2.png" alt="output" class="output-img">
+    </div>
+    <!--Learn Javascript syntax-->
+    <div>
+        <h2>Javascript Syntax</h2>
+        <P>javascript follows a set of rules called <strong>syntax</strong> </P>
+        <p>syntax should br followed to create correctly-constructed programs</p>
+        <p class="sub-tit">Variablr Declaration</p>
+        <p>In maths we use variables to hold values.</p>
+        <p>it works the same way in javascript, a value can be assigned to a variables.</p>
+        <P>this is called Declaring variables</P>
+        <div class="syntax">
+            var num = 5 //assign number 5 to variable named num <br> <br>
+            document.write(num); //prints the output <br>
+        </div>
+        <p>The num in the example above is called identifier.</p>
+        <p>javaScript identifiers are used to name variables</p>
+
+        <p class="sub-tit">JavaScript Case-Sensitive</p>
+        <p>javaScript identifiers are sensitively cased.</p>
+        <p>in this example, the variables num and Num are Different.</p>
+        <div class="syntax">
+            var num = 5; <br>
+            var Num = 6; <br>
+            <br>
+
+            var sum = num + Num; // add value of num and Num
+            <br>
+            document.write(sum); // print value of variable sum
+            <br>
+
+            <p><u>output is</u></p>
+            11
+        </div>
+    </div>
+    <!--learn Javascript Comments-->
+    <div>
+        <h2>JavaScript Comments</h2>
+        <p>JavaScript comments are used to make Programming easier to read and understand.</p>
+        <p>comments are not executed by the browser</p>
+        <p>comments can be used to add note ,suggestions and hints to a javascript code</p>
+
+        <p class="sub-head">Types of comments in javascript </p>
+        <ul>
+            <li>Single-Line Comments</li>
+            <li>multi-Line Comments</li>
+        </ul>
+        <P class="sub-tit">Single-Line Comments</P>
+        <p>add two forward slash // to make beginning of the line</p>
+        <img src="/javascript code shots/comments 1.png" alt="comments">
+        <br>
+        <p style="font-size: larger;">Another way</p>
+        <p>another way use the /* */, the comment goes between the asteriks</p>
+        <p>this technique is much more flexible</p>
+        <img src="/javascript code shots/comments 2.png" alt="comments">
+        <br>
+        <p class="sub-tit">Multi-Line Comments</p>
+        <P>To make multi-Line comments ,use this syntax</P>
+        <div>
+            <img src="/javascript code shots/comments 3.png" alt="multi-line comments"
+                style="height: 200px; width: 250px;">
+            <img src="/javascript code shots/comments 4.png" alt="multi-line comments"
+                style="height: 200px; width: 250px;">
+        </div>
+        <p class="sub-tit">Disabling Code Using Comments</p>
+        <p>We can disable codes to prevent it from running using comments.</p>
+        <p>This technique is helpful for <strong>testing purposes.</strong></p>
+        <div class="SampleCode">
+            function myfunc() { <br>
+            var a = 5; <br>
+            var b = 5; <br>
+            <br>
+            var sum = a + b; //adds a and b <br>
+            var sub = a - b; // subtract a and b <br>
+            //document.getElementById("demo").innerHTML= sub;<br>
+            document.getElementById("demo").innerHTML= sum;<br>
+            }
+        </div>
+        <p><u>Output for <strong> document.getElementById("demo").innerHTML= sum; (a+b)</strong></u></p>
+        <img src="/javascript code shots/disable comments.png" alt="disable comments" class="output-img">
+        <img src="/javascript code shots/disable comments 1.png" alt="disable comments" class="output-img">
+        <img src="/javascript code shots/disable comments 4.png" alt="disable comments" class="output-img">
+
+        <p><u>output for <strong>document.getElementById("demo").innerHTML= sub;(a-b)</strong> </u></p>
+        <img src="/javascript code shots/disable comments.png" alt="disable comments" class="output-img">
+        <img src="/javascript code shots/disable comments 1.png" alt="disable comments" class="output-img">
+        <img src="/javascript code shots/disable comments 2.png" alt="disable comments" class="output-img">
+    </div>
+    <!--Learn javascript varaiables-->
+
+    <div>
+        <h2>JavaScript variables</h2>
+        <p>In Programming we use variables to hold values.</p>
+        <p>In javascript,variables are used to store data.</p>
+        <p>variable in javascript is very easy</p>
+        <div class="SampleCode">
+            <span>var firstName = "Pandeeswaran";</span><br>
+            <span>var lastName = "S";</span><br>
+            <span>var age = 23;</span><br>
+            <span>//printing values</span><br>
+            <span>document.write(firstName+ " " +lastName+""+"<br>");</span><br>
+            <span>document.write("age is"+" "+age);</span>
+        </div>
+        <p><u>Output is</u></p>
+        <img src="/javascript code shots/var .png" alt="varaiables" class="output-img">
+        <img src="/javascript code shots/var 1.png" alt="variables" class="output-img">
+        <p>above output stored :</p>
+        <p>the text <strong>"Pandeeswaran"</strong> is stored/assigned to <strong>firstName</strong> <br>
+            the text <strong>"S"</strong> is stored/assigned to <strong>lastName</strong> <br>
+            the number <strong>23</strong> is stored/assigned to <strong>age</strong>
+
+        </p>
+        <p class="sub-tit">Declaring a Variable</p>
+        <p>The <strong>var</strong> Statement creates or <strong>declared</strong> and is <strong>Initialized</strong>
+            to the value <b>23</b></p>
+        <p>also <b>declare</b> or create a varaiables first,then assign a value <b>(Initialize)</b> later</p>
+        <p><Strong>Sample Program 1</Strong></p>
+        <p class="SampleCode">
+            <span>var x = 23;</span><br>
+            <span>document.write(x);//prints the value of x</span>
+        </p>
+        <p><u>Output is</u></p>
+        <img src="/javascript code shots/var 2.png" alt="declare-var" class="output-img">
+        <img src="/javascript code shots/var 3.png" alt="declare-var" class="output-img">
+        <br>
+        <p><Strong>Sample Program 2</Strong></p>
+        <p class="SampleCode">
+            <span>var x;</span><br>
+            <span>x=23</span><br>
+            <span>document.write(x);//prints the value of x</span>
+        </p>
+        <p><u>Output is</u></p>
+        <img src="/javascript code shots/var 4.png" alt="declare-var" class="output-img">
+        <img src="/javascript code shots/var 3.png" alt="declare-var" class="output-img">
+
+        <p class="sub-tit">Declarating multiple variable in one Statement</p>
+        <p>Possible to declare multiple variables at once,using single Statement.</p>
+        <p>separate variables the variables with a comma(,).</p>
+        <div class="SampleCode">
+            <span> var firstName = "Pandeeswaran" , lastName ="S" age="23"; </span>
+            <span>//declare variable at once</span>
+        </div>
+        <p><b>Sample program</b></p>
+        <div class="SampleCode">
+            <span> var firstName = "Pandeeswaran" , lastName ="S" age="23"; </span>
+            <br>
+            <span>//declare variable at once</span>
+            <br>
+            <span> document.write(firstName+" "+lastName+"<br>");</span>
+            <br>
+            <span></span>document.write("age is"+" "+ age);</span>
+
+            <br>
+            <p><u>Output is</u></p>
+            <p>Pandeeswaran S</p>
+            <p>age is 23 </p>
+
+
+        </div>
+    </div>
+
+
+
+    <!--Javascript Data types-->
+
+    <div>
+        <h2> JavaScript Data Types</h2>
+        <p>In javaScript or any programming language,The concept of data types is important.
+        <br>
+        <p>Data Types are the Different kinds of data that can be stored or used in a Javascript Program.</p>
+        <h3>data types</h3>
+        <ul>
+            <li>string data type</li>
+            <li>number data type</li>
+            <li>Combining String and Numbers</li>
+            <li>Boolean Data type</li>
+            <li>The undefined Data Type</li>
+            <li>The Null Data Type</li>
+            <li>Object Data Type</li>
+            <li>Javascript Array</li>
+            <li>The typeof Operator</li>
+            <li>primitivie data type</li>
+            <li>complex data type</li>
+        </ul>
+
+
+        <!--string data type-->
+        <div>
+            <p class="sub-tit" id="string data type">String Data Type</p>
+            <p>string data type is a sequence of characters used to represent text. <br>
+                String can be written single or double quotes.</p>
+            <div class="type-syntax">
+                <span>var name = "pandi" ;//double quotes </span>
+                <span>var name1= "eswaran";//single quotes</span>
+            </div>
+        </div>
+        <!--number data type-->
+        <div>
+            <p class="sub-tit" id="number data type">Number Data Type</p>
+            <p>Number data type is an <b> integer</b> or a <b> floating point </b> number(number with decimal).</p>
+            <div class="type-syntax">
+                <span>var x = 4; //is an integer</span><br>
+                <span>var y = 5.5; //floating point number </span>
+            </div>
+        </div>
+        <!--Combining String and Numbers-->
+        <div>
+            <p>Combining String and Numbers</p>
+            <p>Combining string and string returns a <strong>string.</strong> </p>
+            <p>Combining number and number returns a <strong>number.</strong> </p>
+            <p>Combining string and number returns a <strong>string.</strong></p>
+            <div class="type-syntax">
+                <span>var type = 21 + "siva";</span> <br>
+                <span>var type1 = 23 + "pandi"; </span> <br>
+                <span>sum = type + type1;</span> <br>
+                <span>document.write(sum);</span> <br>
+                <p><u>output is</u></p>
+                <p>21siva23pandi</p>
+            </div>
+        </div>
+        <!--Boolean Data type-->
+        <div>
+
+            <p class="sub-tit" id="Boolean Data type" >Boolean Data Type</p>
+            <p><strong>Boolean data type</strong> is a logical data type.</p>
+            <p>Boolean data type have <strong>true</strong> or <strong>false</strong> values.</p>
+            <div class="type-syntax">
+                <span>var b1=true;</span><br>
+                <span>var b2=false;</span> <br>
+                <span>document.write("javascript is easy learning:"+" "+b1+"<br>");</span><br>
+                <span>document.write("learn in one month:"+" "+b2);</span>
+                <p><u>output is </u></p>
+                <p>javascript is easy learning: true </p>
+                <p>learn in one month: false</p>
+            </div>
+            <p>Boolean are mainly used for Conditional testing </p>
+            <p>Booleans output of Comparision Operators.</p>
+            <p><strong>==</strong> sign used to given values equal or not <br>
+                if they equal returns <strong>true</strong> otherwise <strong>false</strong>
+            </p>
+            <div class="type-syntax">
+                <span>var x = 10;</span><br>
+                <span>var y = 20;</span><br>
+                <span>var equalorNot = ( x == y);</span><br>
+                <span>document.write(equalorNot);<span><br>
+                        <p><u>output is </u></p>
+                        <p>false</p>
+            </div>
+        </div>
+        <!--The undefined Data Type-->
+        <div>
+            <p class="sub-tit" id="The undefined Data Type">The Undefined Data type</p>
+            <p>variable not assigned value, the value is <b> Undefined</b></p>
+            <p style="color:teal"><strong>example program</strong></p>
+            <div class="type-syntax">
+                <span>var Things ;</span><br>
+                <span>document.write(Things);</span><br>
+                <p><u>output is </u></p>
+                <p>undefined </p>
+                <p>if variable is not declared, returns undefined</p>
+
+            </div>
+        </div>
+        <!--The Null Data Type-->
+        <div>
+            <p class="sub-tit" id="The Null Data Type">The Null Data Type</p>
+            <p style="text-indent: 2px;"> The null data type is special data type,<br>
+                denoting a null value - meaning its not an empty string "" or 0 <br>
+                it simply means <strong>nothing</strong>
+            </p>
+            <div class="type-syntax">
+                <span>var animal = null;</span><br>
+                <span>document.write(animal);</span>
+
+                <p><u>Output is </u></p>
+                null
+            </div>
+        </div>
+        <!--Object Data Type-->
+        <div>
+            <p id="Object Data Type" class="sub-tit">Object Data Type</p>
+            <p>most basic concept of javaScript <strong>Objects.</strong><br>
+                The object data type is a collection of related data. <br> </p>
+            <p style="color: blue; font-size: x-large;"><b>syntax</b></p>
+            <p>
+                The object contains properties written in <strong>key:value</strong> pairs <br>
+                each pair is separated by a comma(,) <br>
+                objects are written inside curly braces {}
+            </p>
+            <div class="type-syntax">
+                <span>var banana ={ </span> <br>
+                <span>color:"yellow",</span> <br>
+                <span>size:"long",</span><br>
+                <span>quantity:3,</span><br>
+                <span>isSweet:true,</span><br>
+                <span>};</span>
+            </div>
+
+            <p>above example ,the banana object has 4 properties:
+                <b>color</b>,<b>size</b>,<b>quantity</b>,<b>isSweet</b>
+            </p>
+        </div>
+        <!--Javascript Array-->
+        <div>
+            <p class="sub-tit" id="Javascript Array">JavaScript Arrays</p>
+            <p>javaScript array is a collection of values. Each value is separated with a comma (,).</p>
+            <p>its eritten with square brackets[].</p>
+            <p>The data type of array is <strong>Object</strong></p>
+            <div class="type-syntax">
+                <span>var animal =["cat","dog","horse","gow"]; </span>
+                <span>document.getElementById("demo").innnerHTML=</span>
+                <span>animal[0]+" "+animal[1]+" "+animal[2]+" "+animal[3];</span>
+                <p><u>output is</u><br>
+                    cat dog horse gow
+                </p>
+            </div>
+            <p>above example the animal variable containes four string values <br>
+                <b>cat</b>,<b>dog</b>,<b>horse</b>,<b>gow.</b></p>
+        </div>
+        <!--Javascript is dynamic-->
+        <div>
+            <p class="sub-tit">javaScript is Dynamic</p>
+            <p>javaScript is Dynamic language. <br>
+                variables are not directly associated with a single data type, <br>
+                unlike in other programming languages.
+            </p>
+            <div class="type-syntax">
+                <span>var x ="pandi" //x is a String</span> <br>
+                <span> x = true; //x is now boolean</span> <br>
+                <span> x = 21; //x is now a number</span>
+                <span>document.write(x);</span>
+                <p><u>output is </u>
+                    <br> 21
+                </p>
+            </div>
+        </div>
+        <!--The typeof Operator-->
+        <div>
+            <p class="sub-tit" id="The typeof Operator">The typeof Operators</p>
+            <p>The <b>typeof</b> returns a string indicating the data type of the evaluated operand.</p>
+            <div class="type-sytanx">
+                <span>typeof "name";</span>
+                <span>typeof 23;</span>
+                <span>typeof true;</span>
+                <span>typeof undefined</span>
+            </div>
+            <p><u>Output is </u></p>
+            <img src="/javascript code shots/typeof.png" alt="typeof Operator" class="output-img">
+            <img src="/javascript code shots/typeof 1.png" alt="typeof Operator" class="output-img">
+        </div>
+        <!--primitivie data type-->
+
+        <div>
+            <p class="sub-tit" id="primitive data type">Primitive Data Type</p>
+            <p>Primitive data are data that are not object and has no methods</p>
+            <p>4 basic Primitive data types</p>
+            <ul>
+                <li>Stirng</li>
+                <li>number</li>
+                <li>boolean</li>
+                <li>undefined</li>
+            </ul>
+            <p>all primitive data types can be returned by the <br>
+                <strong>typeof</strong> operator.
+            </p>
+        </div>
+        <!--complex data type-->
+        <div>
+            <p class="sub-tit" id="complex data type">Complex Data Type</p>
+            <p>
+                There are two complex data types, both can be returned <br>
+                by the <strong>typeof</strong> operator.
+            </p>
+            <ul>
+                <li>object</li>
+                <li>function</li>
+            </ul>
+            <div class="type-syntax">
+                <span>typeof {firstName: "Pandeeswaran", lastName:"S", age:23};</span><br><br>
+                <span> typeof ["apples","orange","banana"];</span><br><br>
+                <span>typeof null;  </span><br><br> 
+                <span>typeof function(){};</span> 
+            </div>
+            <p><u>Output is </u></p>
+            <img src="/javascript code shots/complex data.png" alt="complex data" class="output-img">
+            <img src="/javascript code shots/complex data 1.png" alt="complex data" class="output-img">
+            <p><b>typeof</b> operator returns <b>"object"</b> when the operand is an <b>object,array or null</b></p>
+            <p>it returns<b>function</b>,when the operand is a function. </p>
+
+        </div>
+    </div>
+
+<br>
+<br>
+<p style="font-size: x-large;">
+    next topics very important to learn javaScript
+</p>
+    <a href="/operators.html" class="topics">JavaScript Operators</a>
+
+    
+
+<!-- 
+    <p>JavaScript Operators are used to perform Particular Actions
+    </p>
+
+    <ul id="operator-type">
+        <li>Assignment Operators</li>
+        <li>Arithmetic Operators</li>
+        <li>Comparision Operators</li>
+        <li>logical&Conditional Operators</li>
+        <li>BitWise Operators</li>
+    </ul>
+    <h2>Important Things In JavaScript</h2>
+    <ul>
+        <li>function</li>
+        <li>Objects</li>
+        <li>Stirngs & Stirng methods</li>
+        <li>Numbers & Number Methods</li>
+        <li>Arrays & Array Methods</li>
+
+    </ul>
+
+    <h2>Conditional Statement</h2>
+    <ul>
+        <li>if...else Statement</li>
+        <li>switch Statement</li>
+    </ul>
+
+    <h2>Loops in JavaScript</h2>
+
+    <ul>
+        <li>For Loop </li>
+        <li>For of Loop</li>
+        <li>While Loop</li>
+    </ul>
+
+    </div>
+    <script src="/sample programs/sample.js"></script>
+-->
+</body>
+
+</html>
